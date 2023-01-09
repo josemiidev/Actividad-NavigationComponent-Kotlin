@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/navegador">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegador"
+    app:startDestination="@id/primerFragment">
 
+    <fragment
+        android:id="@+id/primerFragment"
+        android:name="com.baileninformacion.ejercicionavigationcomponent.Fragments.PrimerFragment"
+        android:label="PrimerFragment" >
+        <action
+            android:id="@+id/action_primerFragment_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundoFragment"
+        android:name="com.baileninformacion.ejercicionavigationcomponent.Fragments.SegundoFragment"
+        android:label="fragment_segundo"
+        tools:layout="@layout/fragment_segundo" >
+        <action
+            android:id="@+id/action_segundoFragment_to_tercerFragment"
+            app:destination="@id/tercerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tercerFragment"
+        android:name="com.baileninformacion.ejercicionavigationcomponent.Fragments.TercerFragment"
+        android:label="fragment_tercer"
+        tools:layout="@layout/fragment_tercer" />
 </navigation>
