@@ -12,13 +12,7 @@ import com.baileninformacion.ejercicionavigationcomponent.R
 import com.baileninformacion.ejercicionavigationcomponent.databinding.FragmentPrimerBinding
 
 class PrimerFragment : Fragment() {
-
     private lateinit var binding : FragmentPrimerBinding
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

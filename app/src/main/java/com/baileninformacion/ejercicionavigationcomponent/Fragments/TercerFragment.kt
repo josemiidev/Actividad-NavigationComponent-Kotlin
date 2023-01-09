@@ -26,6 +26,5 @@ class TercerFragment : Fragment() {
             val navController = Navigation.findNavController(it)
             navController.navigate(R.id.action_tercerFragment_to_primerFragment)
         }
-
     }
 }
