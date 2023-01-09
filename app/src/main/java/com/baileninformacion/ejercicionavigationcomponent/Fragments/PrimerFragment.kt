@@ -29,13 +29,14 @@ class PrimerFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val navController = Navigation.findNavController(view)
+
         binding.btnSegundaPantalla.setOnClickListener{
+            val navController = Navigation.findNavController(it)
             if(!binding.txtNumero.text.toString().isEmpty() && !binding.txtTexto.text.toString().isEmpty()){
                 var datos = Bundle()
                 datos.putString("texto",binding.txtTexto.text.toString())
-                datos.putInt("numero", Integer.parseInt(binding.txtNumero.toString()))
-                navController.navigate(R.id.action_primerFragment_to_segundoFragment)
+                datos.putString("numero", binding.txtNumero.text.toString())
+                navController.navigate(R.id.action_primerFragment_to_segundoFragment,datos)
             }else{
                 Toast.makeText(activity,"Debe Rellenar Todos Los Campos",Toast.LENGTH_LONG).show()
             }

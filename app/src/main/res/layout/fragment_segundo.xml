@@ -8,7 +8,7 @@
     tools:context=".Fragments.SegundoFragment">
 
     <TextView
-        android:id="@+id/txtTexto"
+        android:id="@+id/tvTexto"
         android:layout_marginTop="100dp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtNumero"
+        android:id="@+id/tvNumero"
         android:layout_marginTop="50dp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
@@ -29,14 +29,14 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtTexto"/>
+        app:layout_constraintTop_toBottomOf="@id/tvTexto"/>
     <Button
         android:id="@+id/btnPantallaFinal"
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pantalla Final"
-        app:layout_constraintTop_toBottomOf="@id/txtNumero"
+        app:layout_constraintTop_toBottomOf="@id/tvNumero"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
