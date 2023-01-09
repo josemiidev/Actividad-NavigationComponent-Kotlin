@@ -8,7 +8,8 @@
     <fragment
         android:id="@+id/primerFragment"
         android:name="com.baileninformacion.ejercicionavigationcomponent.Fragments.PrimerFragment"
-        android:label="PrimerFragment" >
+        android:label="fragment_primer"
+        tools:layout="@layout/fragment_primer" >
         <action
             android:id="@+id/action_primerFragment_to_segundoFragment"
             app:destination="@id/segundoFragment" />
@@ -26,5 +27,9 @@
         android:id="@+id/tercerFragment"
         android:name="com.baileninformacion.ejercicionavigationcomponent.Fragments.TercerFragment"
         android:label="fragment_tercer"
-        tools:layout="@layout/fragment_tercer" />
+        tools:layout="@layout/fragment_tercer" >
+        <action
+            android:id="@+id/action_tercerFragment_to_primerFragment"
+            app:destination="@id/primerFragment" />
+    </fragment>
 </navigation>

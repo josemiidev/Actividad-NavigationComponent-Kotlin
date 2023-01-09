@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#87b314"
-    tools:context=".PrimerFragment">
+    tools:context=".Fragments.PrimerFragment">
 
     <EditText
         android:id="@+id/txtTexto"
